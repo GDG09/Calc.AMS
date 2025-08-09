@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login AMS</title>
+  <link rel="stylesheet" href="../../css/login-principal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <section id="login">
+      <div id="imagem">
+        <!--aqui vai a imagem-->
+      </div>
+      <div id="formulario">
+        <h1>AMS Calc</h1>
+        <form action="login.sql" method="post" autocomplete="on">
+          <div class="campo">
+            <i class="material-symbols-outlined">person</i>
+            <label for="loginAdm">Login</label>
+            <input type="email" name="login" id="loginAdm" autocomplete="username" required maxlength="30" placeholder="Admin login">
+
+          </div>
+          <div class="campo">
+            <i class="material-symbols-outlined">lock</i>
+            <label for="senha"></label>
+            <input type="password" name="password" id="senha" autocomplete="current-password" required minlength="8" placeholder="********">
+            <i class="material-symbols-outlined">Visibility</i>
+          </div>
+          <input type="submit" value="Entrar">
+          <a href="#">Esqueci a senha</a>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
