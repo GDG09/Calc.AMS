@@ -6,4 +6,74 @@ telas grandes: min-width 992px: and max-width: 1200px
 telas extra grandes: min-width 1200px: max-width: 1800px
 ----------------------------
 */
+/* paleta de cores
+--------------------
+  #A1AFBF azul acinzentado claro e suave
 
+  #758394 tom medio azul acinzentado
+
+  #43556A azul profundo com toque acinzentado
+
+  #1D2D40 azul escuro com nuances acinzentado
+
+  #0F2033 azul quase preto, profundo e intenso
+
+  #021C39 azul marinho com leve toque esverdeado
+
+*/
+
+:root{
+
+  --color-primary:#A1AFBF;
+  --color-secondary:#758394;
+  --color-buttons_primary:#43556A;
+  --color-buttons_secondary:#1D2D40;
+  --color-background:#021C39;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+
+  height: 100vh;
+  width: 100vw;
+
+}
+main{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-background) url(../images/backgrounds/arranha-Ceu.jpg) no-repeat center center;
+}
+section#login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  -webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(10px);
+
+  /* background-color: var(--color-primary); */
+  width:99%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+  transition: width 1s, height 1s;
+  transition-timing-function:linear;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+
+}
+div#formulario{
+
+}
